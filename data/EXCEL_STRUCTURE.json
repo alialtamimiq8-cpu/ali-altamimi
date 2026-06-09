@@ -1,0 +1,166 @@
+{
+  "description": "ملف Excel يحتوي على بيانات الخرائط الفلكية",
+  "format": "Excel (.xlsx)",
+  "sheets": [
+    {
+      "name": "الخرائط",
+      "columns": [
+        {
+          "column": "A",
+          "name": "التاريخ",
+          "type": "Date",
+          "format": "YYYY-MM-DD",
+          "example": "2026-07-01"
+        },
+        {
+          "column": "B",
+          "name": "الوقت",
+          "type": "Time",
+          "format": "HH:MM:SS",
+          "example": "06:30:00"
+        },
+        {
+          "column": "C",
+          "name": "الطالع_البرج",
+          "type": "Text",
+          "description": "برج الطالع في تلك الساعة",
+          "example": "الحمل"
+        },
+        {
+          "column": "D",
+          "name": "الشمس_البيت",
+          "type": "Number",
+          "description": "رقم البيت من 1-12",
+          "example": 10
+        },
+        {
+          "column": "E",
+          "name": "القمر_البيت",
+          "type": "Number",
+          "example": 8
+        },
+        {
+          "column": "F",
+          "name": "عطارد_البيت",
+          "type": "Number",
+          "example": 10
+        },
+        {
+          "column": "G",
+          "name": "الزهرة_البيت",
+          "type": "Number",
+          "example": 11
+        },
+        {
+          "column": "H",
+          "name": "المريخ_البيت",
+          "type": "Number",
+          "example": 1
+        },
+        {
+          "column": "I",
+          "name": "المشتري_البيت",
+          "type": "Number",
+          "example": 12
+        },
+        {
+          "column": "J",
+          "name": "زحل_البيت",
+          "type": "Number",
+          "example": 5
+        }
+      ],
+      "notes": "هذه الورقة تحتوي على بيانات الكواكب والبيوت لكل وقت"
+    },
+    {
+      "name": "الجوانب",
+      "columns": [
+        {
+          "column": "A",
+          "name": "التاريخ",
+          "type": "Date",
+          "format": "YYYY-MM-DD",
+          "example": "2026-07-01"
+        },
+        {
+          "column": "B",
+          "name": "الوقت",
+          "type": "Time",
+          "format": "HH:MM:SS",
+          "example": "06:30:00"
+        },
+        {
+          "column": "C",
+          "name": "كوكب_1",
+          "type": "Text",
+          "description": "اسم الكوكب الأول",
+          "example": "الشمس"
+        },
+        {
+          "column": "D",
+          "name": "كوكب_2",
+          "type": "Text",
+          "description": "اسم الكوكب الثاني",
+          "example": "عطارد"
+        },
+        {
+          "column": "E",
+          "name": "نوع_الجانب",
+          "type": "Text",
+          "description": "نوع العلاقة بين الكواكب",
+          "allowed_values": [
+            "اقتران",
+            "تثليث",
+            "تسديس",
+            "تربيع",
+            "مقابلة"
+          ],
+          "example": "اقتران"
+        },
+        {
+          "column": "F",
+          "name": "الدرجات",
+          "type": "Number",
+          "description": "عدد الدرجات بين الكواكب (اختياري)",
+          "example": 5.2
+        }
+      ],
+      "notes": "هذه الورقة تحتوي على الجوانب (العلاقات) بين الكواكب"
+    }
+  ],
+  "data_rows": 1647,
+  "time_periods": [
+    "06:30:00 (الصباح)",
+    "12:00:00 (الظهيرة)",
+    "17:30:00 (المساء)"
+  ],
+  "date_range": {
+    "start": "2026-07-01",
+    "end": "2027-12-31",
+    "total_days": 549
+  },
+  "zodiac_signs": [
+    "الحمل",
+    "الثور",
+    "الجوزاء",
+    "السرطان",
+    "الأسد",
+    "العذراء",
+    "الميزان",
+    "العقرب",
+    "القوس",
+    "الجدي",
+    "الدلو",
+    "الحوت"
+  ],
+  "planets": [
+    "الشمس",
+    "القمر",
+    "عطارد",
+    "الزهرة",
+    "المريخ",
+    "المشتري",
+    "زحل"
+  ],
+  "houses": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+}
